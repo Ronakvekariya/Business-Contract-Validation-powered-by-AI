@@ -3,6 +3,8 @@ import os
 import json
 import google.generativeai as genai
 
+from config import GOOGLE_API_KEY
+
 class TextComparison:   
         
   def __init__(self , paragraphs_template ,paragraphs_contract):
@@ -13,7 +15,7 @@ class TextComparison:
     self.combined_input = ""
     self.model = None
    
-    genai.configure(api_key="AIzaSyABsR-Bcf2G2jnuwMIhGB0E2L-AlQkUdVE")
+    genai.configure(api_key=GOOGLE_API_KEY)
 
       # Create the model
       # See https://ai.google.dev/api/python/google/generativeai/GenerativeModel
