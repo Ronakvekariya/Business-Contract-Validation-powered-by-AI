@@ -1,1 +1,0 @@
-# Business-Contract-Validation-powered-by-AI
