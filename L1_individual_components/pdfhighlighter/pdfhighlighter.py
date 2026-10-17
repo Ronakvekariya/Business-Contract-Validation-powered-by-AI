@@ -38,9 +38,9 @@ class PdfHighlighter:
 
             # Upload the file to Cloudinary with filename
             cloudinary.config(
-                cloud_name='deziazvyp',
-                api_key='115335176222945',
-                api_secret='-AJDclFmKfBgeaPqfQtbHqd8sgQ'
+                cloud_name=CLOUDINARY_CLOUD_NAME,
+                api_key=CLOUDINARY_API_KEY,
+                api_secret=CLOUDINARY_API_SECRET,
             )
 
             result = cloudinary.uploader.upload(highligh_pdf_path, public_id='highlighted.pdf', resource_type="raw")
