@@ -4,8 +4,6 @@ import os
 
 tagger = SequenceTagger.load("flair/ner-english-ontonotes-large")
 
-# API_URL = os.getenv("HF_API_KEY")
-# headers = {"Authorization": os.getenv("HF_TOKEN")}
 
 class Ner:
   def __init__(self, pdfText):
